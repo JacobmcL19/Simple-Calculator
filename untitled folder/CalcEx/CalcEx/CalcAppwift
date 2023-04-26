@@ -1,0 +1,19 @@
+//
+//  CalcApp.swift
+//  CalcAPP
+//
+//  Created by Jacob McLean on 4/22/23.
+//
+
+import SwiftUI
+
+@main
+struct CalcApp: App {
+    var body: some Scene {
+        WindowGroup {
+            CalculatorView()
+                .environmentObject(CalculatorView.ViewModel())
+        }
+    }
+}
+
